@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/scripts.js" defer></script>
+
+    <title>Prueba - Unidad 1</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">Ingrese los datos (Nombre y apellido)</h1>
+        </header>
+
+
+        <section class="section-container">
+            <div class="form-container">
+
+                <form action="#">
+                    <div class="form-data">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                    </div>
+
+                    <div class="form-data">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+                    </div>
+                    
+                    <div class="btn-container">
+                        <button type="button" id="btn-agregar" onclick="agregarNombre()">Agregar</button>
+                    </div>
+
+                    <span id="msg-error"></span>
+                    <span id="msg-exito"></span>
+                    
+                </form>
+            </div>
+    </div>
+    </section>
+
+    <section class="section-registro">
+        <div class="register-table">
+            <h1 class="title">Datos Registrados</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tabla-registros">
+                    <tr>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>Todos los derechos Reservados</footer>
+
+
+
+
+    </div>
+</body>
+
+</html>
